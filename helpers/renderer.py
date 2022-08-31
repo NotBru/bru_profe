@@ -5,37 +5,59 @@ import sys
 
 from pathlib import Path
 import cairosvg
+import yaml
 
-def render(content: str, target: Union[Path, str]):
+def parse(content: str) -> dict:
+    split = content.split("\n", 22)
+    lines = split[:22]
+    config = yaml.safe_load(io.StringIO(split[22]))
+    config = {} if config is None else config
+    return lines, config
+
+def dump_text(lines: list[str], svg_file):
     FONT_STYLE = "CaskaydiaCove Nerd Font Mono"
     TEXT_STYLE = f"font-family:'{FONT_STYLE}';"
     TEXT_TEMPLATE = (
-        '    <text x="{}" y="{}" font-size="11pt" xml:space="preserve" '
-             'fill="#00FFFF" '
+        '    <text x="{}" y="{}" font-size="22.3pt" xml:space="preserve" '
+             'fill="#00FFAF" '
              'style="' + TEXT_STYLE + '">{}</text>\n')
-    svg_file = io.StringIO()
-    # -inkscape-font-specification:'CaskaydiaCove Nerd Font Mono';"
-    w=673
-    h=768/1366*w
-    svg_file.write(f'<svg width="{w}px" height="{h}px">\n')
-    svg_file.write(f'    <rect width="{w}px" height="{h}px"/>\n')
-    for i, line in enumerate(content.split('\n')):
-        # Fugly fix for monospace
+    hstep=1364/79
+    vstep=768/22
+    for i, line in enumerate(lines):
         for j in range(min(79, len(line))):
             if line[j] == " ":
                 continue
             svg_file.write(
-                TEXT_TEMPLATE.format(1+(w-2)/79*j, 17*(i+1), line[j]))
-    svg_file.write('</svg>')
-    svg_file.seek(0)
-    # cairosvg.svg2png(file_obj=svg_file, write_to=str(target), scale=4)
+                TEXT_TEMPLATE.format(1+hstep*j, vstep*(i+1), line[j]))
+
+def dump_external(filepath: str, svg_file, pwd: Path):
+    if filepath == "":
+        return
+    if filepath[0] == "/" or filepath[0] == "~":
+        filepath = Path(filepath)
+    else:
+        filepath = pwd / filepath
+    absolute = filepath.resolve()
+    svg_file.write(f'    <image x="0" y="0" xlink:href="{absolute}"/>\n')
+
+def render(content: str, target: Union[Path, str]):
+    lines, config = parse(content)
     svg_target=str(target)+".svg"
-    with open(svg_target, "w") as outf:
-        svg_file.seek(0)
-        outf.write(svg_file.read())
+    pwd = target.parent.parent
+    with open(svg_target, "w") as svg_file:
+        svg_file.write('<svg \n'
+            '  width="1366px"\n'
+            '  height="768px"\n'
+            '  xmlns:xlink="http://www.w3.org/1999/xlink"\n'
+            '  xmlns="http://www.w3.org/2000/svg"\n'
+            '  xmlns:svg="http://www.w3.org/2000/svg">\n')
+        svg_file.write('    <rect width="1366px" height="768px"/>\n')
+        dump_external(config.get("background", ""), svg_file, pwd)
+        dump_text(lines, svg_file)
+        dump_external(config.get("foreground", ""), svg_file, pwd)
+        svg_file.write('</svg>')
     png_target=str(target)+".png"
-    os.system(f"inkscape \"{svg_target}\" -o \"{png_target}\" "
-               "--export-width=1366 --export-height=768")
+    os.system(f'inkscape "{svg_target}" -o "{png_target}" 2>/dev/null')
     Path(svg_target).unlink()
 
 def run(dir_: Path) -> int:
