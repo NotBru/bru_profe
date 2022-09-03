@@ -25,17 +25,25 @@ def dump_text(lines: list[str], svg_file):
              'fill="#00FFAF" '
              'style="' + TEXT_STYLE + '">{}</text>\n')
     hstep=1364/79
-    vstep=768/22
+    vstep=768/22.1
     for i, line in enumerate(lines):
         for j in range(min(79, len(line))):
             if line[j] == " ":
                 continue
+            content = line[j]
             if line[j] in ["í", "Í"]:
                 offset = hstep * 2 / 7
             else:
                 offset = 0
+
+            if content == "<":
+                content = "&lt;"
+            elif content == ">":
+                content = "&gt;"
+            elif content == '"':
+                content = "&quot;"
             svg_file.write(
-                TEXT_TEMPLATE.format(1+hstep*j+offset, vstep*(i+1), line[j]))
+                TEXT_TEMPLATE.format(1+hstep*j+offset, vstep*(i+1), content))
 
 def dump_external(filepath: str, svg_file, pwd: Path):
     if filepath == "":
@@ -67,15 +75,26 @@ def render(content: str, target: Union[Path, str]):
     os.system(f'inkscape "{svg_target}" -o "{png_target}" 2>/dev/null')
     Path(svg_target).unlink()
 
+def num_digits(n: int):
+    d = 1
+    while 10 ** d <= n:
+        d += 1
+    return d
+
 def run(dir_: Path) -> int:
     filenames = [ path.name for path in dir_.iterdir() ]
     target_dir = dir_ / "rendered"
     target_dir.mkdir(exist_ok=True)
+    for fn in target_dir.iterdir():
+        fn.unlink()
     i = 0
     while (name := str(i)) in filenames:
         with open(dir_ / name, "r") as inf:
             render(inf.read(), target_dir / name)
         i += 1
+    digits = num_digits(i - 1)
+    for j in range(i):
+        (target_dir / f"{j}.png").rename(target_dir / f"{j:0{digits}d}.png")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
