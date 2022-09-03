@@ -10,8 +10,11 @@ import yaml
 def parse(content: str) -> dict:
     split = content.split("\n", 22)
     lines = split[:22]
-    config = yaml.safe_load(io.StringIO(split[22]))
-    config = {} if config is None else config
+    if (
+        len(split) < 23
+        or (config := yaml.safe_load(io.StringIO(split[22]))) is None):
+
+        config = {}
     return lines, config
 
 def dump_text(lines: list[str], svg_file):
@@ -27,8 +30,12 @@ def dump_text(lines: list[str], svg_file):
         for j in range(min(79, len(line))):
             if line[j] == " ":
                 continue
+            if line[j] in ["í", "Í"]:
+                offset = hstep * 2 / 7
+            else:
+                offset = 0
             svg_file.write(
-                TEXT_TEMPLATE.format(1+hstep*j, vstep*(i+1), line[j]))
+                TEXT_TEMPLATE.format(1+hstep*j+offset, vstep*(i+1), line[j]))
 
 def dump_external(filepath: str, svg_file, pwd: Path):
     if filepath == "":
