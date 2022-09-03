@@ -1,23 +1,13 @@
-Cursito de desarrollo de software de Bru; Hoja: 1; Radix: 10                  
+Cursito de desarrollo de software de Bru; Hoja: 1; Radix: 10
 
 
 
 
-        Sobre el profe:
-            Nombre: Bru
-            Características:
-              - Supuestamente instruído
-              - Mágister en física
-              - Quant. o algo así
-              - Guapo
-
-
-
-
-
-
-
-
-
-
-background: "la_cartulina.svg"
+        Sobre el curso:
+            Cuándo: Sábados de 10 a 12
+            Dónde: Acá
+            Dificultad: Elije tu propia aventura
+            Camino:
+                - Escribir un “Hola mundo” y correrlo
+                - ¿¿??
+                - Hacer algún proyectito

@@ -1,0 +1,22 @@
+Cursito de desarrollo de software de Bru; Hoja: 26; Radix: 10
+
+
+        Assembly:
+            Lo más cercano a hablar en código máquina que no es
+            literalmente hablar en código máquina
+
+         sub   al, ah            ; Perform (right - left)
+         xor   ah, ah            ; Reset ah to 0 or it will be a nuisance later when we add eax to esi.
+         div   bl                ; And, perform al/bl. Remember that al was holding (right - left).
+                                 ; So the result is the middle point of upper and lower bounds.
+         xor   ah, ah            ; Reset ah to 0 again, for the very same reason above.
+         add   al, [left]        ; After the division, al was loaded (right - left) / 2 which is the middle
+                                 ; point of upper and lower bounds. Now we are adding the value of left to the 
+                                 ; middle value because we want to find the middle point relative to the lower
+                                 ; bound.
+         mov   [mid], al         ; And, load 'mid' the value we calculated in the al.
+         push  esi               ; Store esi onto the stack.
+         add   esi, eax;         ; Update esi by incrementing it by eax (or 'mid') to get the value at the index of 'mid'. Namely, arr[mid].
+         mov   dl, [esi]         ; And get arr[mid] to dl.
+         pop   esi               ; Restore esi from the stack.
+         cmp   dh, dl            ; And, compare the value we are searching with dl.
