@@ -92,10 +92,11 @@ class Renderer:
             self._svg_external_image(svg_file, config["background"], pwd)
             for rect in config["rects"]:
                 x = rect["j"] * self._hrect
-                y = rect["i"] * self._vrect
+                y = (rect["i"] + 1/7) * self._vrect
                 width = rect["width"] * self._hrect
                 height = rect["height"] * self._vrect
-                self._svg_rect(svg_file, width, height, x, y)
+                color = rect.get("color", "FF0000")
+                self._svg_rect(svg_file, width, height, x, y, color)
             self._svg_lines(svg_file, lines)
             self._svg_external_image(svg_file, config["foreground"], pwd)
             svg_file.write("</svg>")
