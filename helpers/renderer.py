@@ -41,6 +41,7 @@ class Renderer:
 
             config = {}
         config["background"] = config.get("background", "")
+        config["rects"] = config.get("rects", [])
         config["foreground"] = config.get("foreground", "")
         return lines, config
 
@@ -70,11 +71,15 @@ class Renderer:
             '  xmlns="http://www.w3.org/2000/svg"\n'
             '  xmlns:svg="http://www.w3.org/2000/svg">\n')
 
+    @staticmethod
     def _svg_rect(svg_file: io.TextIOBase, width: Union[float, int],
-        height: Union[float, int], color="000000"):
+        height: Union[float, int], x: Union[float, int]=0,
+        y: Union[float, int]=0, color="000000"):
 
-        svg_file.write(f'    <rect width="{width}px" height="{height}px" '
-                            f'fill="#{self.background_color}"/>\n')
+        svg_file.write(f'    <rect '
+                            f'x="{x}px" y="{y}px" '
+                            f'width="{width}px" height="{height}px" '
+                            f'fill="#{color}"/>\n')
 
     def render(self, content: str, target: Union[Path, str], pwd: Path):
         lines, config = self._parse_file(content)
@@ -82,19 +87,26 @@ class Renderer:
 
         with open(svg_target, "w") as svg_file:
             self._svg_header(svg_file)
-            self._svg_rect(svg_file, self._width, self._height)
+            self._svg_rect(svg_file, self._width, self._height,
+                color=self.background_color)
             self._svg_external_image(svg_file, config["background"], pwd)
+            for rect in config["rects"]:
+                x = rect["j"] * self._hrect
+                y = rect["i"] * self._vrect
+                width = rect["width"] * self._hrect
+                height = rect["height"] * self._vrect
+                self._svg_rect(svg_file, width, height, x, y)
             self._svg_lines(svg_file, lines)
             self._svg_external_image(svg_file, config["foreground"], pwd)
             svg_file.write("</svg>")
 
         png_target=str(target)+".png"
         os.system(f'inkscape "{svg_target}" -o "{png_target}" 2>/dev/null')
-        Path(svg_target).unlink()
+        # Path(svg_target).unlink()
 
-    def __init__(self, width=1366, height=768, h_chars=79, v_chars=22,
+    def __init__(self, width=1366, height=768, hchars=79, vchars=22,
         offsets: Optional[defaultdict]=None, default_color="00FFAF",
-        background_color="000000FF",
+        background_color="000000",
         default_font="CaskaydiaCove Nerd Font Mono",):
 
         self.background_color = background_color
@@ -108,8 +120,10 @@ class Renderer:
         self.offsets = offsets
         self._width = width
         self._height = height
-        self._hstep = (width - 2) / h_chars
-        self._vstep = (height - 2) / v_chars * .99
+        self._hstep = (width - 2) / hchars
+        self._hrect = width / hchars
+        self._vstep = (height - 2) / vchars * .99
+        self._vrect = height / vchars
         # 1pt = 96/72 px
         # 6/7th of a step for the font
         self._font_size = self._vstep * 72 * 7 / 8 / 96
