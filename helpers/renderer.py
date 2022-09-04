@@ -63,14 +63,16 @@ class Renderer:
         svg_file.write(f'    <image x="0" y="0" xlink:href="{absolute}"/>\n')
 
     def _svg_header(self, svg_file: io.TextIOBase):
-        width = self._width
-        height = self._height
         svg_file.write('<svg \n'
-            f'  width="{width}px"\n'
-            f'  height="{height}px"\n'
+            f'  width="{self._width}px"\n'
+            f'  height="{self._height}px"\n'
             '  xmlns:xlink="http://www.w3.org/1999/xlink"\n'
             '  xmlns="http://www.w3.org/2000/svg"\n'
             '  xmlns:svg="http://www.w3.org/2000/svg">\n')
+
+    def _svg_rect(svg_file: io.TextIOBase, width: Union[float, int],
+        height: Union[float, int], color="000000"):
+
         svg_file.write(f'    <rect width="{width}px" height="{height}px" '
                             f'fill="#{self.background_color}"/>\n')
 
@@ -80,6 +82,7 @@ class Renderer:
 
         with open(svg_target, "w") as svg_file:
             self._svg_header(svg_file)
+            self._svg_rect(svg_file, self._width, self._height)
             self._svg_external_image(svg_file, config["background"], pwd)
             self._svg_lines(svg_file, lines)
             self._svg_external_image(svg_file, config["foreground"], pwd)
