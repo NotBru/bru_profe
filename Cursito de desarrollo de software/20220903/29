@@ -1,0 +1,19 @@
+Cursito de desarrollo de software de Bru; Hoja: 29; Radix: 10
+
+
+        C:
+            Nos abstrae un poco bastante de la arquitectura
+            del procesador
+
+        Ejemplo:
+            Archivo:
+
+            | #include <stdio.h>
+            |
+            | int main() {
+            |     printf("Hello world!");
+            | }
+
+            Resultado:
+
+            > Hello world!

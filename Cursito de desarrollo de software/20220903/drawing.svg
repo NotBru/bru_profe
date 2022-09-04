@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (1:1.1+202202050852+0a00cf5339)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.46057099"
+     inkscape:cx="396.24728"
+     inkscape:cy="560.17423"
+     inkscape:window-width="1362"
+     inkscape:window-height="729"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="113.85205"
+       y="193.55608"
+       width="481.16464"
+       height="391.66448"
+       id="rect2365" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2363"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect2365);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="113.85156"
+         y="228.94727"
+         id="tspan3998">&lt;&gt;
+</tspan><tspan
+         x="113.85156"
+         y="278.94727"
+         id="tspan4000">{}
+</tspan><tspan
+         x="113.85156"
+         y="328.94727"
+         id="tspan4002">[]
+</tspan><tspan
+         x="113.85156"
+         y="378.94727"
+         id="tspan4004">&quot;
+</tspan><tspan
+         x="113.85156"
+         y="428.94727"
+         id="tspan4006">'
+</tspan><tspan
+         x="113.85156"
+         y="478.94727"
+         id="tspan4008">`</tspan></text>
+  </g>
+</svg>

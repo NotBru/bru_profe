@@ -1,0 +1,10 @@
+Cursito de desarrollo de software de Bru; Hoja: 31; Radix: 10
+
+
+        C:
+            Nos abstrae un poco bastante de la arquitectura
+            del procesador
+
+        Puntos a favor:
+            - No nos abstrae demasiado de la memoria como
+              para desentendernos de ella
