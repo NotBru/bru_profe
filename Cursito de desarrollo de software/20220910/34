@@ -1,0 +1,31 @@
+Cursito de desarrollo de software de Bru; Clase: 1; Hoja: 34; Radix: 10
+
+
+        Fase de evaluación: ¿Qué es evaluar?
+
+        Veamos unos ejemplos primero:
+
+            >>> 2 + 3
+            5
+            >>> 2 * 3
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 7
+    j: 12
+    hsteps: 80
+    vsteps: 8
+    color: "002020"
+    text_color: "FFFFFF"
+
+
