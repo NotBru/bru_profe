@@ -1,0 +1,47 @@
+Cursito de desarrollo de software de Bru; Clase: 1; Hoja: 53; Radix: 10
+
+
+        Sé el intérprete
+
+
+             (2 + 3 * 4) * 2 * 3 + 7
+             ╾──────────────────────────────────────────────────────────────────
+             2 + 3 * 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 12
+    vsteps: 22
+    hsteps: 80
+    color: "A0A0A0"
+    text_color: "000000"
+  - i: 6
+    j: 13
+    hsteps: 11
+    text_color: "000000"
+    color: "90C0C0"
+  - i: 6
+    j: 13
+    text_color: "008020"
+  - i: 6
+    j: 23
+    text_color: "008020"
+  - i: 8
+    j: 17
+    hsteps: 5
+    color: "90C0C0"
+  - i: 8
+    j: 19
+    text_color: "008020"
