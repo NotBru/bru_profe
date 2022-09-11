@@ -1,0 +1,32 @@
+Cursito de desarrollo de software de Bru; Clase: 1; Hoja: 85; Radix: 10
+
+
+        Operadores usuales entre enteros
+
+            Símbolos    Asociatividad
+
+            ()
+            **          Derecha a izquierda
+            -
+            * / // %    Izquierda a derecha
+            + -         Izquierda a derecha
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 8
+    j: 12
+    hsteps: 2
+    vsteps: 2
+    text_color: "2060B0"
+  - i: 10
+    j: 14
+    hsteps: 6
+    text_color: "2060B0"

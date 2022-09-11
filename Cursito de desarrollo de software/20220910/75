@@ -1,0 +1,17 @@
+Cursito de desarrollo de software de Bru; Clase: 1; Hoja: 75; Radix: 10
+
+
+        Operandos!
+
+        Vienen en distintos tipos
+        - Enteros
+          Ejemplos: -17, -3, 0, 23, 148500
+        - Fraccionarios
+          Ejemplos: -14.3, -0.2, 0.3, 3.5,
+                    -17.0, -3., .0, 23.00, 1.485e6 (no se asusten)
+        - Cadenas de caracteres:
+          Ejemplos: "Hello world!",
+                    "En tu boca mordí la manzana carmín del deseo y la tentación
+                    "Сука блать"
+        - Funciones:
+          Ejemplos: print, exit...

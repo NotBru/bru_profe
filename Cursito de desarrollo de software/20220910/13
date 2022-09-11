@@ -1,0 +1,35 @@
+Cursito de desarrollo de software de Bru; Clase: 1; Hoja: 13; Radix: 10
+
+    
+        El interpretuque es un REPL:
+
+            ╭─> Read ╾─> Eval ╾─> Print ╾─╮
+            │                             │
+            │            Loop             │
+            │                             │
+            ╰─────────────────────────────╯
+
+            Read: Leer
+            Eval: Evaluar
+            Print: Imprimir
+            Loop: Bucle
+
+
+
+
+
+
+
+
+rects:
+    - i: 5
+      hsteps: 80
+      vsteps: 5
+      text_color: "FFFFFF"
+    - i: 7
+      j: 25
+      hsteps: 4
+      text_color: "00A0FF"
+    - i: 14
+      hsteps: 80
+      text_color: "00A0FF"

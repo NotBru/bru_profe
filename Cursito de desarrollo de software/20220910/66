@@ -1,0 +1,8 @@
+Cursito de desarrollo de software de Bru; Clase: 1; Hoja: 66; Radix: 10
+
+
+        Repaso, para las ideas que se nos escaparon por el toilet
+            - El intérprete de Python repite un ciclo:
+                Leer, evaluar, imprimir.
+            - Al leer, podemos separar los símbolos en operadores y
+              operandos

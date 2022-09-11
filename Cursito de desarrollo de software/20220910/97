@@ -1,0 +1,32 @@
+Cursito de desarrollo de software de Bru; Clase: 1; Hoja: 97; Radix: 10
+
+
+        Operadores usuales entre enteros
+
+            Símbolos    Asociatividad
+
+            ()
+            **          Derecha a izquierda
+            -
+            * / // %    Izquierda a derecha
+            + -         Izquierda a derecha
+
+        “División fraccionaria”
+
+        Ejemplos
+            4 / 2 ─> 2.
+            1 / 2 ─> .5
+
+
+
+
+rects:
+  - i: 10
+    j: 14
+    text_color: "FF00FF"
+  - i: 15
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "A0A0A0"
+    text_color: "000000"
