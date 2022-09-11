@@ -74,12 +74,33 @@ class Renderer:
     @staticmethod
     def _svg_rect(svg_file: io.TextIOBase, width: Union[float, int],
         height: Union[float, int], x: Union[float, int]=0,
-        y: Union[float, int]=0, color="000000"):
+        y: Union[float, int]=0, color: Optional[str]=None):
 
-        svg_file.write(f'    <rect '
-                            f'x="{x}px" y="{y}px" '
-                            f'width="{width}px" height="{height}px" '
-                            f'fill="#{color}"/>\n')
+        if color is not None:
+            svg_file.write(f'    <rect '
+                                f'x="{x}px" y="{y}px" '
+                                f'width="{width}px" height="{height}px" '
+                                f'fill="#{color}"/>\n')
+
+    def _apply_rect(self, rect):
+        i = rect.get("i", 0)
+        j = rect.get("j", 0)
+        hsteps = rect.get("hsteps", 1)
+        vsteps = rect.get("vsteps", 1)
+        if "text_color" in rect:
+            text_color = rect["text_color"]
+            for k in range(i, i+vsteps):
+                for l in range(j, j+hsteps):
+                    self.colors[(k, l)] = text_color
+        x = 0 if j == 0 else j * self._hstep
+        y = 0 if i == 0 else 1 + (i + .16) * self._vstep
+        return {"x": x, "y": y,
+                "width": hsteps * self._hrect + 1,
+                "height": vsteps * self._vrect + 1,
+                "color": rect.get("color", None)}
+
+    def _reset(self):
+        self.colors = defaultdict(lambda: self.default_color)
 
     def render(self, content: str, target: Union[Path, str], pwd: Path):
         lines, config = self._parse_file(content)
@@ -91,19 +112,15 @@ class Renderer:
                 color=self.background_color)
             self._svg_external_image(svg_file, config["background"], pwd)
             for rect in config["rects"]:
-                x = rect["j"] * self._hrect
-                y = (rect["i"] + 1/7) * self._vrect
-                width = rect["width"] * self._hrect
-                height = rect["height"] * self._vrect
-                color = rect.get("color", "FF0000")
-                self._svg_rect(svg_file, width, height, x, y, color)
+                self._svg_rect(svg_file, **self._apply_rect(rect))
             self._svg_lines(svg_file, lines)
             self._svg_external_image(svg_file, config["foreground"], pwd)
             svg_file.write("</svg>")
 
         png_target=str(target)+".png"
         os.system(f'inkscape "{svg_target}" -o "{png_target}" 2>/dev/null')
-        # Path(svg_target).unlink()
+        self._reset()
+        Path(svg_target).unlink()
 
     def __init__(self, width=1366, height=768, hchars=79, vchars=22,
         offsets: Optional[defaultdict]=None, default_color="00FFAF",
