@@ -1,0 +1,28 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 35; Radix: 10
+
+
+        Funciones:
+            Nos sirven cuando tenemos que hacer el mismo trabajo
+            varias veces, y sólo cambian “detalles”.
+
+            En nuestro ejemplo, estamos calculando una y otra vez el
+            monto a cobrar:
+
+              cantidad_lechuga * precio_lechuga
+            + cantidad_tomate  * precio_tomate
+            + cantidad_sandía  * precio_sandía
+
+            Cada vez que repito esta cuenta, los precios permanecen
+            constantes, y van variando las cantidades de verduras.
+
+
+
+
+
+
+rects:
+  - i: 10
+    j: 12
+    hsteps: 35
+    vsteps: 3
+    text_color: "FF00FF"

@@ -1,0 +1,34 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 37; Radix: 10
+
+
+        Objetivo: que nuestro REPL luzca así
+
+        >>> monto(.5, 1, 8)
+        1329.5
+        >>> monto(0, 0, 20)
+        2260
+        >>> monto(2, 4, 0)
+        1702      │  │  ╰── Cantidad de sandía
+                  │  ╰───── Cantidad de tomate
+                  ╰──────── Cantidad de lechuga
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    vsteps: 6
+    color: "002020"
+    text_color: "FFFFFF"
+  - i: 10
+    j: 18
+    hsteps: 79
+    vsteps: 3
+    text_color: "00FFFF"

@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 18; Radix: 10
+
+
+        Ejemplo motivacional:
+
+        Los precios son:
+            - Lechuga: 421 pe/kg
+            - Tomate: 215 pe/kg
+            - Sandía: 113 pe/kg
+
+        Primer abordaje: el REPL como calculadora a secas
+
+        >>> .5 * 421 + .5 * 215 + 13 * 113
+        1787.0
+        >>> 1.5 * 421 + .5 * 215
+        739.0
+        >>> .5 * 421 + 8 * 113
+        1114.5
+
+
+
+
+rects:
+  - i: 12
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "002020"
+    text_color: "FFFFFF"
