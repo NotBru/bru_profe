@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 44; Radix: 10
+
+
+        ¡Ejemplos! En la forma de divertidas adivinanzas ✨
+
+        >>> 2 * x = x
+          File "<stdin>", line 1
+            2 * x = x
+            ^^^^^
+        SyntaxError: cannot assign to expression here. Maybe you meant '=='
+        instead of '='?
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    vsteps: 6
+    color: "002020"
+    text_color: "FFFFFF"

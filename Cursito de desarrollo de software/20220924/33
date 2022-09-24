@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 33; Radix: 10
+
+
+        Objetivo:
+
+        ¡Bienvenide!
+        Cantidad de lechuga [g]: 750
+        Cantidad de tomate [g]: 500
+        Cantidad de sandía [kg]: 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    text_color: "FFFFFF"
+    color: "002020"

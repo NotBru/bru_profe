@@ -1,0 +1,34 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 69; Radix: 10
+
+
+                                 ¡Funciones!
+
+        Ejemplos:
+
+        print
+            Imprime en pantalla
+
+        >>> print("Hello, world!")
+        Hello, world!
+        >>>
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 7
+    j: 7
+    hsteps: 7
+    color: "202020"
+    text_color: "00B040"
+  - i: 10
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "002020"
+    text_color: "FFFFFF"

@@ -1,0 +1,28 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 66; Radix: 10
+
+
+                                 ¡Funciones!
+
+        Ejemplos:
+
+        print
+            Imprime en pantalla
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 7
+    j: 7
+    hsteps: 7
+    color: "202020"
+    text_color: "00B040"

@@ -1,0 +1,14 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 54; Radix: 10
+
+
+        - Pero profe, las comillas dobles son un caracter, ¿no?
+        - Se
+        - ¿Cómo hago si quiero incorporar comillas dobles como parte
+          de una cadena de texto? Dado que se usa como caracter de
+          finalización de cadena de texto, no podemos simplemente
+          escribir comillas doble en el código, puesto que el
+          intérprete la interpretaría como la comilla doble que
+          marcaría el final de la cadena de caracteres.
+          Luego intentaría interpretar el resto de los caracteres
+          como símbolos propios de Python, introduciendo,
+          probablemente, un error de sintaxis en el archivo.

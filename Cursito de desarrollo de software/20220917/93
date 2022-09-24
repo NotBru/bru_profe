@@ -1,0 +1,27 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 93; Radix: 10
+
+
+        Ejemplo motivacional:
+
+        Los precios son:
+            - Lechuga: 421 pe/kg
+            - Tomate: 215 pe/kg
+            - Sandía: 113 pe/kg
+
+        Me gustaría repetir una y otra vez la siguiente fórmula:
+
+            (  cantidad_lechuga * precio_lechuga
+             + cantidad_tomate  * precio_tomate
+             + cantidad_sandía  * precio_sandía  )
+
+
+
+
+
+
+
+rects:
+  - i: 12
+    hsteps: 79
+    vsteps: 22
+    text_color: "FF00FF"

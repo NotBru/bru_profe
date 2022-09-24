@@ -1,0 +1,28 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 25; Radix: 10
+
+
+        Variables:
+            Son un nombre que ocupa el lugar de un objeto (una bella
+            abstracción)
+
+        Sintaxis:
+            precio_lechuga = 421
+
+            Lo podemos pensar como un “alias”, una “referencia”:
+
+            precio_lechuga ╾─> 421
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 8
+    j: 11
+    hsteps: 79
+    color: "202020"
+    text_color: "FFFFFF"

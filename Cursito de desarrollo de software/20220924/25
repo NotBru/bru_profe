@@ -1,0 +1,14 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 25; Radix: 10
+
+
+        Ejemplos del mundo real:
+        - Counter Strike:
+          - Necesito saber si el usuario está apretando cosas
+          - Si el usuario dispara, necesito saber si le da al
+            contrincante, y restarle los puntos de vida necesarios.
+        - Página de adultos:
+          - Necesito saber la edad del usuario, y mostrar o no el
+            contenido según su respuesta
+        - Servicios web como Google, Youtube, Facebook...
+        - Correcciones minúsculas de trayectoria en satélites
+        - Bots de trading (no entren en la timba)

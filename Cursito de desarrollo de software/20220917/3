@@ -1,0 +1,8 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 3; Radix: 10
+
+        En el capítulo anterior
+        - Vimos que el intérprete es un REPL
+          (lee, evalúa, imprime, y repite)
+        - Vimos cómo funciona el proceso de evaluar:
+          Se identifican todos los operadores, y se “resuelven” en el
+          orden especificado por el lenguaje

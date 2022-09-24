@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 28; Radix: 10
+
+
+        Objetivo:
+
+        ¡Bienvenide!
+        Cantidad de lechuga [g]:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    text_color: "FFFFFF"
+    color: "002020"

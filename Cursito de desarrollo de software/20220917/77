@@ -1,0 +1,28 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 77; Radix: 10
+
+
+                                 ¡Funciones!
+
+        Ejemplos:
+
+        type
+            Devuelve el tipo de dato de sus argumentos
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 7
+    j: 7
+    hsteps: 6
+    color: "202020"
+    text_color: "00B040"

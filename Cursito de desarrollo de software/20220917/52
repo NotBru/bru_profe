@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 52; Radix: 10
+
+
+        Breve desvío: operación y asignación combinadas
+
+        >>> manzanas = 50
+        >>> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    vsteps: 22
+    hsteps: 79
+    color: "002020"
+    text_color: "FFFFFF"
