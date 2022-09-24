@@ -1,0 +1,10 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 40; Radix: 10
+
+
+        String
+            Es una “cadena” (secuencia) de caracteres
+
+        Caracter
+            Entendámoslo como “un símbolo individual”
+            Incluyendo el espacio
+            Incluyendo el salto de línea

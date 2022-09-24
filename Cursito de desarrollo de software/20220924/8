@@ -1,0 +1,28 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 8; Radix: 10
+
+
+        Hello, terminal!
+
+        (Tipeo dictado)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    vsteps: 22
+    hsteps: 79
+    text_color: "FFFFFF"

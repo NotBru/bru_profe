@@ -1,0 +1,30 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 100; Radix: 10
+
+
+        Ejemplo motivacional:
+
+        Los precios son:
+            - Lechuga: 421 pe/kg
+            - Tomate: 215 pe/kg
+            - Sandía: 113 pe/kg
+
+        >>> def monto(cant_lechuga, cant_tomate, cant_sandía):
+        ...     monto_lechuga = cant_lechuga * 421
+        ...     monto_tomate = cant_tomate * 215
+        ...     monto_sandía = cant_sandía * 113
+        ...     return monto_lechuga + monto_tomate + monto_sandía
+        ...
+        >>>
+
+
+
+
+
+
+rects:
+  - i: 10
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "002020"
+    text_color: "FFFFFF"

@@ -1,7 +1,29 @@
 Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 27; Radix: 10
 
 
+        ¡Ejemplos! En la forma de divertidas adivinanzas ✨
+
+        >>>
 
 
 
-        Volvamos al ejemplo anterior...
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "002020"
+    text_color: "FFFFFF"

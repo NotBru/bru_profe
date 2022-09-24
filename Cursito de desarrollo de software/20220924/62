@@ -1,0 +1,10 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 62; Radix: 10
+
+
+        String
+            Es una “cadena” (secuencia) de caracteres
+
+        Caracter de escape
+            Literalmente la contrabarra, \
+            Le dice al intérprete que no debe interpretar el caracter
+            que le sigue como lo haría normalmente

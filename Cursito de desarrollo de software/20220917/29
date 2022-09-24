@@ -1,27 +1,27 @@
 Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 29; Radix: 10
 
 
-        Ejemplo motivacional:
+        ¡Ejemplos! En la forma de divertidas adivinanzas ✨
 
-        Los precios son:
-            - Lechuga: 421 pe/kg
-            - Tomate: 215 pe/kg
-            - Sandía: 113 pe/kg
+        >>> x = 3
+        >>>
 
-        Segundo abordaje: uso variables
 
-        ...
-        >>> .5 * precio_lechuga + .5 * precio_tomate + 13 * precio_sandía
-        1787.0
-        >>>  0 * precio_lechuga +  1 * precio_tomate +  8 * precio_sandía
-        1119.0
+
+
+
+
+
+
+
+
 
 
 
 
 
 rects:
-  - i: 12
+  - i: 5
     j: 8
     hsteps: 79
     vsteps: 22

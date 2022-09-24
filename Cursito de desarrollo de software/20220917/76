@@ -1,0 +1,18 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 76; Radix: 10
+
+
+                                 ¡Funciones!
+
+        Concepto general:
+
+            Una función es un objeto que realiza una tarea.
+            Potencialmente depende de “parámetros de entrada”.
+            Potencialmente “evalúa a” algo.
+
+            Se las conoce como “caja negra”
+
+                          ╭───────────────────╮
+                          │                   │
+               Entrada ──>│     función       │──> Salida
+                          │                   │
+                          ╰───────────────────╯

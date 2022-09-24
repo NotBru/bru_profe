@@ -1,0 +1,41 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 60; Radix: 10
+
+
+        String
+            Es una “cadena” (secuencia) de caracteres
+
+            La distinguimos porque está encerrada entre comillas dobles
+
+            print("Hello world!")
+            
+            O simples!
+
+            print('Hola, "Bru". Si es que ese es tu nombre.')
+
+            O triple comillas dobles, o triple comillas simples
+
+            print('''Y dijo, "Hola, 'Roberto'", si así te llamas''')
+
+
+
+
+
+
+
+
+rects:
+  - i: 8
+    j: 12
+    hsteps: 79
+    text_color: "FFFFFF"
+    color: "002020"
+  - i: 12
+    j: 12
+    hsteps: 79
+    text_color: "FFFFFF"
+    color: "002020"
+  - i: 16
+    j: 12
+    hsteps: 79
+    text_color: "FFFFFF"
+    color: "002020"

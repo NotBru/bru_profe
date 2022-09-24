@@ -1,0 +1,30 @@
+Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 92; Radix: 10
+
+
+        Ejemplo motivacional:
+
+        Los precios son:
+            - Lechuga: 421 pe/kg
+            - Tomate: 215 pe/kg
+            - Sandía: 113 pe/kg
+
+
+
+            .5 * precio_lechuga + .5 * precio_tomate + 13 * precio_sandía
+             │                     │                    │
+             0 * precio_lechuga +  1 * precio_tomate +  8 * precio_sandía
+             │                     │                    │
+             ╰─ cantidad_lechuga   ╰─ cantidad_tomate   ╰─ cantidad_sandía
+
+
+
+
+
+rects:
+  - i: 13
+    hsteps: 79
+    text_color: "00E0E0"
+  - i: 15
+    vsteps: 2
+    hsteps: 79
+    text_color: "00D0D0"

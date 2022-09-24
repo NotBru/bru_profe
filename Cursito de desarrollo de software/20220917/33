@@ -1,6 +1,29 @@
 Cursito de desarrollo de software de Bru; Clase: 2; Hoja: 33; Radix: 10
 
 
-        Funciones:
-            Nos sirven cuando tenemos que hacer el mismo trabajo
-            varias veces, y sólo cambian “detalles”.
+        ¡Ejemplos! En la forma de divertidas adivinanzas ✨
+
+        >>> x = 3
+        >>> x
+        3
+        >>> x = 4
+        >>> x
+        4
+        >>>
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "002020"
+    text_color: "FFFFFF"

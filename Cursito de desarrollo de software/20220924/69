@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 69; Radix: 10
+
+
+        String
+            Es una “cadena” (secuencia) de caracteres
+
+        Caracter de escape
+            Literalmente la contrabarra, \
+            Le dice al intérprete que no debe interpretar el caracter
+            que le sigue como lo haría normalmente
+
+        Ejemplo:
+            >>> print("Hola, \"Bru\"")
+            Hola, "Bru"
+            >>> print('Hola,\n"Bru"')
+            Hola,
+            "Bru"
+            >>> print("Hola, Bpu\b\br")
+            Hola, Bru
+            >>> print("Y aquí una humilde contrabarra: \\")
+            Y aquí una humilde contrabarra: \
+            >>>
+rects:
+  - i: 12
+    j: 12
+    hsteps: 79
+    vsteps: 22
+    text_color: "FFFFFF"
+    color: "002020"
