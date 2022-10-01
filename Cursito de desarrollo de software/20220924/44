@@ -28,7 +28,7 @@ rects:
     color: "002020"
   - i: 8
     hsteps: 79
-    text_color: "202020"
+    text_color: "808080"
   - i: 10
     hsteps: 79
-    text_color: "202020"
+    text_color: "808080"

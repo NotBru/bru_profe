@@ -1,0 +1,30 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 147; Radix: 10
+
+
+        Operador “si” (`if`):
+
+        Ejemplo:
+
+        print("Buenos días señore kioskere uwu")
+        print("Deme un sachetsito de leche")
+        respuesta = input("¿Hay huevos?")
+        if respuesta == "Sí" or respuesta == "Se":
+            print("Media docena por favor")
+        else:
+            print("Oh, qué pena")
+        print("Buenísimo, muchas gracias")
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 7
+    j: 8
+    hsteps: 79
+    vsteps: 8
+    text_color: "FFFFFF"

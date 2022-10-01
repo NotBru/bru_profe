@@ -1,4 +1,28 @@
 Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 72; Radix: 10
 
 
-        A ver si la pego. Debería llegar a esta parte a las 10:45.
+        Con vosotros: input
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 3
+    j: 22
+    hsteps: 5
+    text_color: "008B8B"
+    color: "101010"

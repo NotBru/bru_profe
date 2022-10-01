@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 149; Radix: 10
+
+
+        Operador “si” (`if`):
+
+        Sintaxis:
+
+        if condición1:
+            ...
+            ...
+        elif condición2:
+            ...
+            ...
+        else:
+            ...
+            ...
+
+
+
+
+
+
+rects:
+  - i: 7
+    j: 8
+    hsteps: 79
+    vsteps: 9
+    color: "F0A0A0"
+    text_color: "000000"

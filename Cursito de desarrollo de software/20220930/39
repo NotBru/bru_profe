@@ -1,0 +1,33 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 39; Radix: 10
+
+
+        Los operadores de comparación:
+
+        ==  “es igual a”              !=  “es distinto a”
+        <   “es menor a”              <=  “es menor o igual a”
+        >   “es mayor a”              >=  “es mayor o igual a”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 2
+    vsteps: 3
+    text_color: "00D0D0"
+  - i: 5
+    j: 38
+    hsteps: 2
+    vsteps: 3
+    text_color: "00D0D0"

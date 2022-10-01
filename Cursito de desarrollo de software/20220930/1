@@ -1,0 +1,30 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 1; Radix: 10
+
+
+        En el capítulo anterior:
+          - Chusmeamos la terminal y un par de comandos
+          - Vimos un nuevo tipo de dato: las cadenas de caracteres, o
+            `string`.
+          - Vimos cómo ingerir datos del usuario, con la función
+            `input`.
+          - Vimos que podemos transformar un tipo de dato a otro.
+            Ejemplo:
+            >>> int("3")
+            3
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 11
+    j: 12
+    vsteps: 2
+    hsteps: 79
+    text_color: "FFFFFF"
+    color: "002020"

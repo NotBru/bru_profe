@@ -1,0 +1,15 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 111; Radix: 10
+
+
+        Operadores de comparación:
+
+        <   >   <=  >=  ==  != 
+
+        Ejemplos de comparaciones que evalúan a True:
+
+        2 < 3
+        -1 > -5
+        1 <= 1
+        2 >= -1
+        2 == 2
+        3 != 2

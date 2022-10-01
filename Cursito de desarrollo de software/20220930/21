@@ -1,0 +1,39 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 21; Radix: 10
+
+
+        Idea: Pasado el kilo de tomate, cobrar 10% menos por kilo
+
+        Python
+        ...
+        PRECIO_TOMATE = 0.421
+        ...
+
+        if cant_tomate < 1000:
+            monto_tomate = PRECIO_TOMATE * cant_tomate
+        elif cant_tomate < 2000:
+            monto_tomate = PRECIO_TOMATE * cant_tomate * 0.9
+        else:
+            monto_tomate = PRECIO_TOMATE * cant_tomate * 0.8
+
+        monto = monto_lechuga + monto_tomate + monto_sandía
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    color: "808080"
+    text_color: "000000"
+  - i: 6
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "303030"
+    text_color: "FFFFFF"

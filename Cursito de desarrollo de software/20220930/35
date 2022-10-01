@@ -1,0 +1,28 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 35; Radix: 10
+
+
+        ¡Nuevo tipo de dato! bool
+
+        - Representan “valores de verdad”: “True” o “False”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 3
+    j: 29
+    hsteps: 4
+    text_color: "008B8B"
+    color: "101010"

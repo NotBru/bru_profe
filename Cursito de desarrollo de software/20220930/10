@@ -1,0 +1,31 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 10; Radix: 10
+
+
+        El intérprete de Python
+            Modo interactivo:
+             leeR
+                Evaluar
+              imPrimir
+             bucLe
+            Leyendo un script:
+                ¿Imprimir? jajajajaja salu2
+
+                En vez de leer lo que el usuario escribe, lee el
+                archivo que le pedimos
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    hsteps: 79
+    vsteps: 4
+    text_color: "FFFFFF"
+  - i: 5
+    j: 16
+    vsteps: 4
+    text_color: "00D0D0"

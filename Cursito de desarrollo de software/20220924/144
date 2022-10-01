@@ -1,0 +1,33 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 144; Radix: 10
+
+
+        Precedencia:
+
+        (Antes)
+            Comparaciones
+            not
+            and
+            or
+        (Después)
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    vsteps: 22
+    hsteps: 79
+    text_color: "D02020"
+  - i: 6
+    j: 11
+    vsteps: 4
+    hsteps: 15
+    text_color: "000000"
+    color: "808080"

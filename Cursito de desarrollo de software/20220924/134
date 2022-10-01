@@ -1,0 +1,18 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 134; Radix: 10
+
+
+        Aritmética booleana!
+
+        Operador “o”:
+
+        “Llueve o juega la selección”
+
+        A: “Llueve”
+        B: “Juega la selección”
+
+        A │ B │ A y B
+        ──┼───┼──────
+        F │ F │
+          │   │
+          │   │
+          │   │

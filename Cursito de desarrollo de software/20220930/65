@@ -1,0 +1,10 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 65; Radix: 10
+
+
+        Ejercicios
+
+        Adivinador biyectivo
+
+        Pedirle al usuario que PIENSE un número, del 1 al 100 ponele,
+        pero que no lo escriba. A través de preguntas del estilo “¿Es
+        tu número mayor a sarasa?”, encontrar el número.

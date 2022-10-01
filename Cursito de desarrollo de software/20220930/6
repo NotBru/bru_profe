@@ -1,0 +1,31 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 6; Radix: 10
+
+
+        El intérprete de Python
+            Modo interactivo:
+                Rleer
+                Evaluar
+                Pimprimir
+                Lbucle
+
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    hsteps: 79
+    vsteps: 4
+    text_color: "FFFFFF"
+  - i: 5
+    j: 16
+    vsteps: 4
+    text_color: "00D0D0"

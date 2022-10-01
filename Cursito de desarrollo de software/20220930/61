@@ -1,0 +1,11 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 61; Radix: 10
+
+
+        Ejercicios
+        
+        Conjetura de Collatz:
+            Elegí un número natural mayor a 1.
+            Si el número es par, dividilo por 2.
+            Si no, multiplicalo por 3 y sumale 1.
+            Repetí tantas veces como haga falta.
+            Llegaste al 1.
