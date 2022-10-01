@@ -1,0 +1,9 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 108; Radix: 10
+
+
+        Con vosotros: los booleanos, `bool`
+
+        - Son como un Youtuber, te tiran la posta (ponele)
+        - Tienen sólo dos valores posibles: `True` y `False`
+          (verdadero y falso respectivamente)
+        - Los obtengo como resultado de evaluar condiciones lógicas

@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 150; Radix: 10
+
+
+        Operador “mientras” (`while`):
+
+        Sintaxis:
+
+        while condición:
+            ...
+            ...
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 7
+    j: 8
+    hsteps: 79
+    vsteps: 3
+    color: "F0A0A0"
+    text_color: "000000"

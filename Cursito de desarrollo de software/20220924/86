@@ -1,0 +1,34 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 86; Radix: 10
+
+
+        Con vosotros: input
+
+        ¿Qué tipo retorna `input`?
+
+        >>> cantidad_de_lechuga = input()
+        750
+        >>> type(cantidad_de_lechuga)
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 3
+    j: 22
+    hsteps: 5
+    text_color: "008B8B"
+    color: "101010"
+  - i: 7
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    text_color: "FFFFFF"
+    color: "002020"

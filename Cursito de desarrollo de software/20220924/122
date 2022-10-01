@@ -1,0 +1,19 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 122; Radix: 10
+
+
+        Aritmética booleana!
+
+        Operador “y”:
+
+        “Acesta la pelota y está más allá de la línea alrededor del
+         aro”
+
+         A: “Acesta la pelota”
+         B: “Está más allá de la línea alrededor del aro”
+
+        A │ B │ A y B
+        ──┼───┼──────
+        F │ F │   F
+          │   │
+          │   │
+          │   │

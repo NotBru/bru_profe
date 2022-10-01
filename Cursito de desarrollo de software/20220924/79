@@ -1,0 +1,40 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 79; Radix: 10
+
+
+        Con vosotros: input
+
+        Ejemplo:
+
+        print("¡Bienvenide!")
+        cantidad_de_lechuga = input("Cantidad de lechuga [g]: ")
+        print("Usted quiere comprar", cantidad_de_lechuga, "g")
+        monto = .241 * cantidad_de_lechuga
+        print("El costo es", monto, "pe")
+
+        ¡Bienvenide!
+        Cantidad de lechuga [g]:
+
+
+
+
+
+
+
+rects:
+  - i: 3
+    j: 22
+    hsteps: 5
+    text_color: "008B8B"
+    color: "101010"
+  - i: 7
+    j: 8
+    hsteps: 79
+    vsteps: 5
+    text_color: "FFFFFF"
+    color: "400000"
+  - i: 13
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    text_color: "FFFFFF"
+    color: "002020"

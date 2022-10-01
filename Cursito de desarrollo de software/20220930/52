@@ -1,0 +1,35 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 52; Radix: 10
+
+
+        Idea: tener un programa que atienda hasta que termine el
+              horario laboral
+
+        Pseudocódigo
+        ...
+        mientras es_horario_laboral:
+            atender_boludos()
+        print("Cerramooooo'")
+
+
+
+
+
+
+
+
+
+
+
+foreground: "atender_boludos.png"
+rects:
+  - i: 6
+    j: 8
+    hsteps: 79
+    color: "808080"
+    text_color: "000000"
+  - i: 7
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "202020"
+    text_color: "FFFFFF"

@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 129; Radix: 10
+
+
+        Aritmética booleana!
+
+        Operador “y”:
+
+        En Python es representado por el símbolo `and`
+
+        Ejemplos:
+
+        >>> 2 < 3 and -2 > -3
+        True
+        >>> 2 < 3 and 2 > 3
+        False
+        >>> False and True
+        False
+        >>> True and True
+
+
+
+
+rects:
+  - i: 11
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    text_color: "FFFFFF"
+    color: "002020"

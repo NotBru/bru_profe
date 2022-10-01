@@ -1,0 +1,37 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 16; Radix: 10
+
+
+        Idea: Pasado el kilo de tomate, cobrar 10% menos por kilo
+
+        Pseudocódigo
+        ...
+        PRECIO_TOMATE = 0.421
+        ...
+
+        monto_tomate = PRECIO_TOMATE * cant_tomate
+
+
+
+
+        monto = monto_lechuga + monto_tomate + monto_sandía
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    color: "808080"
+    text_color: "000000"
+  - i: 6
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    color: "303030"
+    text_color: "FFFFFF"

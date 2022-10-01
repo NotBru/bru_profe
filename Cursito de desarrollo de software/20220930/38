@@ -1,0 +1,28 @@
+Cursito de desarrollo de software de Bru; Clase: 4; Hoja: 38; Radix: 10
+
+
+        ¡Nuevo tipo de dato! bool
+
+        - Representan “valores de verdad”: “True” o “False”
+        - En última instancia se obtienen siempre de comparaciones:
+          “menor que”, “igual a”, “distinto a”, etc...
+        - Tienen definidos “operadores lógicos”. Corresponden a
+          relaciones entre afirmaciones que hacemos en el lenguaje
+          coloquial:
+          “El alumne promueve si aprueba todos los parciales y su
+           promedio es mayor a 8”
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 3
+    j: 29
+    hsteps: 4
+    text_color: "008B8B"
+    color: "101010"

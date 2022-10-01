@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 89; Radix: 10
+
+
+        El ejemplo, arreglado:
+
+        print("¡Bienvenide!")
+        cantidad_de_lechuga = input("Cantidad de lechuga [g]: ")
+        cantidad_de_lechuga = float(cantidad_de_lechuga)
+        print("Usted quiere comprar", cantidad_de_lechuga, "g")
+        monto = .241 * cantidad_de_lechuga
+        print("El costo es", monto, "pe")
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    j: 8
+    hsteps: 79
+    vsteps: 6
+    text_color: "FFFFFF"
+    color: "004020"

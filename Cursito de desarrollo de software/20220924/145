@@ -1,0 +1,41 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 145; Radix: 10
+
+
+        Precedencia:
+
+        (Antes)
+            Comparaciones
+            not
+            and
+            or
+        (Después)
+
+        Ejemplos:
+
+        llueve or acestó and está_lejitos
+
+
+
+
+
+
+
+rects:
+  - i: 5
+    hsteps: 79
+    text_color: "D02020"
+  - i: 10
+    hsteps: 79
+    text_color: "D02020"
+  - i: 6
+    j: 11
+    vsteps: 4
+    hsteps: 15
+    text_color: "000000"
+    color: "808080"
+  - i: 14
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    text_color: "FFFFFF"
+    color: "202020"

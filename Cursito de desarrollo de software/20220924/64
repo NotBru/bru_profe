@@ -9,7 +9,7 @@ Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 64; Radix: 10
             Le dice al intérprete que no debe interpretar el caracter
             que le sigue como lo haría normalmente
 
-        Ejemplo:
+        Ejemplos:
             >>> print("Hola, \"Bru\"")
             Hola, "Bru"
             >>> print('Hola,\n"Bru"')

@@ -1,0 +1,29 @@
+Cursito de desarrollo de software de Bru; Clase: 3; Hoja: 100; Radix: 10
+
+
+        Con vosotros: las comparaciones
+
+        Ejemplos:
+
+        >>> 3 < 2
+        False
+        >>> 3 > 2
+
+
+
+
+
+
+
+
+
+
+
+
+rects:
+  - i: 7
+    j: 8
+    hsteps: 79
+    vsteps: 22
+    text_color: "FFFFFF"
+    color: "002020"
